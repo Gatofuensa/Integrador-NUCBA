@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2? familia= Montserrat:peso@300;400;500;600;700;800;900 &familia= Poppins:peso@300;400;500;600;700;800;900 & display=swap');
+
+* {  
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    text-decoration: none;   
+    color: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: black;
+    background-attachment: fixed;
+    width: 100%;
+    display: block;
+}
+
+.main { 
+    width: 500px;
+    height: 750px;
+    margin: 70px auto;
+    background: linear-gradient(to right, #3c3b3f, #5c5a4b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;  
+    
+}
+
+.container__title .logo {
+    height: 130px;
+}
+
+h1 {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.container__form { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.container__form__user, .container__form__password {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 40px;
+    width: 300px;
+    height: 45px;
+    gap: 10px;
+    padding-left: 20px;
+} 
+
+.container__form__pass {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} 
+
+.container__form__user i, .container__form__password i {
+    color: #404040;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+}
+
+.container__form input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    font-family: 'Roboto Mono', serif;
+}
+
+
+.olvidaste-password {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: end;
+    color: #e4dede;
+    margin-top: 10px;
+}
+
+.container__form .login {
+    margin-top: 10px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    width: 350px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+}
+
+.container__login-with {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.facebook i {
+    font-size: 20px;
+}
+
+.fa-brands, .fab {
+    font-weight: 400;
+}
+
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands";
+}
+
+.facebook, .google {
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.google {
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0);
+}
+
+
+.container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.container p a {
+    color: #082e80;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+
+
+
+
+

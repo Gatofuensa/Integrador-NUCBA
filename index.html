@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TheWinner</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="animaciones.css">
+</head>
+<body>
+    <header>        
+        <a href="/index.html">
+            <img src="img/logo.png" alt="logo TheWinner" class="navbar__logo">
+        </a>            
+        <nav class="navbar">                       
+            <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
+            <ul class="navbar-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#info">Nosotros</a></li>
+                <li><a href="#productos">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="header__log">
+                <ul class="login">
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="registrarme.html">Registrarme</a>
+                    </li>
+                </ul>
+            </div>                                     
+            <label for="cart-toggle" class="cart-label">                
+                <img src="icon/Carrito.png" alt="Carrito de compras" class="cart-icon"/>
+            </label>
+            <input type="checkbox" id="cart-toggle">
+            <div class="cart">
+                <h2> Tus Productos</h2>
+                <div class="cart-item">
+                    <img src="productos/Adidas Response Solar.webp" alt="Adidas">
+                    <div class="item-info">
+                        <h3 class="item-title">Resp Solar</h3>
+                        <div class="container-talle-cart">                                
+                            <div class="talles">38</div>
+                            <div class="talles">39</div>
+                            <div class="talles">40</div>
+                            <div class="talles">41</div>
+                        </div>                        
+                        <span class="item-precio">$53.999</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="productos/Adidas Solar Glide.webp" alt="Adidas">
+                    <div class="item-info">
+                        <h3 class="item-title">Solar Glide</h3>
+                        <div class="container-talle-cart">                                
+                            <div class="talles">37</div>
+                            <div class="talles">38</div>
+                            <div class="talles">39</div>
+                            <div class="talles">40</div>
+                        </div>    
+                        <span class="item-precio">$45.000</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="productos/Adidas Supernova.webp" alt="Adidas">
+                    <div class="item-info">
+                        <h3 class="item-title">Supernova</h3>
+                        <div class="container-talle-cart">                                
+                            <div class="talles">39</div>
+                            <div class="talles">40</div>
+                            <div class="talles">41</div>
+                            <div class="talles">42</div>
+                        </div>    
+                        <span class="item-precio">$51.990</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="productos/Nike Air Zoom Pegasus.webp" alt="Nike">
+                    <div class="item-info">
+                        <h3 class="item-title">Air Pegasus</h3>
+                        <div class="container-talle-cart">                                
+                            <div class="talles">40</div>
+                            <div class="talles">41</div>
+                            <div class="talles">42</div>
+                            <div class="talles">43</div>
+                        </div>    
+                        <span class="item-precio">$38.999</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="productos/Nike Air Zoom.JPG" alt="Nike">
+                    <div class="item-info">
+                        <h3 class="item-title">Air Zoom</h3>
+                        <div class="container-talle-cart">                                
+                            <div class="talles">39</div>
+                            <div class="talles">40</div>
+                            <div class="talles">41</div>
+                            <div class="talles">42</div>
+                        </div>    
+                        <span class="item-precio">$35.900</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="productos/Nike React Miler 2.webp" alt="Nike">
+                    <div class="item-info">
+                        <h3 class="item-title">React Miler</h3>
+                        <div class="container-talle-cart">                                
+                            <div class="talles">40</div>
+                            <div class="talles">41</div>
+                            <div class="talles">42</div>
+                            <div class="talles">43</div>
+                        </div>    
+                        <span class="item-precio">$43.600</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="productos/Puma Aviator.webp" alt="Puma">
+                    <div class="item-info">
+                        <h3 class="item-title">Aviator</h3>
+                        <div class="container-talle-cart">                                
+                            <div class="talles">39</div>
+                            <div class="talles">40</div>
+                            <div class="talles">41</div>
+                            <div class="talles">42</div>
+                        </div>    
+                        <span class="item-precio">$45.999</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="productos/Puma Electrify.webp" alt="Puma">
+                    <div class="item-info">
+                        <h3 class="item-title">Electrify</h3>
+                        <div class="container-talle-cart">                                
+                            <div class="talles">38</div>
+                            <div class="talles">39</div>
+                            <div class="talles">40</div>
+                            <div class="talles">41</div>
+                        </div>    
+                        <span class="item-precio">$50.999</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="productos/Under Charged Rouge 2.5.webp" alt="Under">
+                    <div class="item-info">
+                        <h3 class="item-title">Rouge 2.5</h3>
+                        <div class="container-talle-cart">                                
+                            <div class="talles">39</div>
+                            <div class="talles">40</div>
+                            <div class="talles">41</div>
+                            <div class="talles">42</div>
+                        </div>    
+                        <span class="item-precio">$53.000</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="productos/Under Charged.webp" alt="Under">
+                    <div class="item-info">
+                        <h3 class="item-title">Charged</h3>
+                        <div class="container-talle-cart">                                
+                            <div class="talles">39</div>
+                            <div class="talles">40</div>
+                            <div class="talles">41</div>
+                            <div class="talles">42</div>
+                        </div>    
+                        <span class="item-precio">$48.000</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down"> - </span>
+                        <span class="item-quantity"> 1 </span>
+                        <span class="quantity-handler up"> + </span>
+                    </div>
+                </div>
+                <span class="divider"></span>
+                <div class="cart-total">
+                    <p>TOTAL</p>
+                    <span>$101.000</span>
+                </div>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="overlay"></div>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="hero">
+            <div class="hero-info">
+                <h1> ABANDONA EL IMPACTO, NO TU CARRERA</h1>
+                <p> Ofrecemos productos innovadores, experiencias y servicios para inspirar a los atletas del mundo. <span>TheWinner</span></p>
+                <div class="btn-container">
+                    <a href="#info" class="hover"> + Info</a>
+                    <a href="#contacto" class="hover"> Contactanos</a>
+
+                </div>
+                               
+            </div>
+            <div class="hero-card">
+                <img src="img/run.jpg" alt="running">                
+            </div>
+        </section>
+        <section id="info">
+            <h2> ACERCA DE NOSOTROS</h2>
+            <div class="info-cards-container">
+                <div class="info-card">
+                    <h3>¿Quiénes somos?</h3>
+                    <p>Somos una empresa familiar con 10 años de trayectoria en el rubro. Ofrecemos nuestros productos de excelente calidad, creados con tecnología y diseños exclusivos al alcance de un click. </p>
+                </div>
+                <div class="info-card">
+                    <h3>Marcas</h3>
+                    <div class="container-marcas">
+                        <ul class="marcas">
+                            <li class="li-marcas"><img src="icon/Nike-Logo.png" alt="Nike"></li>
+                            <li class="li-marcas"><img src="icon/Adidas_logo.png" alt="Adidas"></li>
+                            <li class="li-marcas"><img src="icon/Under_armour_logo.png" alt="Under"></li>
+                            <li class="li-marcas"><img src="icon/Puma-Logo.png" alt="Puma"></li>    
+                        </ul>
+
+                    </div>                    
+                </div>
+                <div class="info-card">
+                    <h3>Servicios</h3>
+                    <ul class="servicios">
+                        <li>
+                            <i class="fa-solid fa-credit-card"> Aceptamos todos los medios de pago. Sin interes</i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-truck"> Envios a todo el pais.</i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"> Productos importados de excelente calidad.</i>
+                        </li>                        
+                    </ul>                    
+                </div>
+            </div>
+        </section>
+        <section id="productos">
+            <h2>CATÁLOGO</h2>
+            <div class="productos-container">
+                <div class="producto">
+                    <img src="productos/Nike Air Zoom Pegasus.webp" alt="Nike">
+                    <div class="producto-info">
+                        <div class="producto-top">
+                            <h3>Air Pegasus</h3>
+                            <P>$38.999</P>
+                        </div>
+                        <div class="producto-med">                            
+                            <div class="container-talle">                                
+                                <div class="talles">40</div>
+                                <div class="talles">41</div>
+                                <div class="talles">42</div>
+                                <div class="talles">43</div>
+                            </div>
+                        </div>
+                        <div class="producto-bot"> 
+                            <div>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="productos/Nike Air Zoom.JPG" alt="Nike">
+                    <div class="producto-info">
+                        <div class="producto-top">
+                            <h3>Air Zoom</h3>
+                            <P>$35.900</P>
+                        </div>
+                        <div class="producto-med">                            
+                            <div class="container-talle">                                
+                                <div class="talles">39</div>
+                                <div class="talles">40</div>
+                                <div class="talles">41</div>
+                                <div class="talles">42</div>
+                            </div>
+                        </div>
+                        <div class="producto-bot"> 
+                            <div>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="productos/Nike React Miler 2.webp" alt="Nike">
+                    <div class="producto-info">
+                        <div class="producto-top">
+                            <h3>React Miler</h3>
+                            <P>$43.600</P>
+                        </div>
+                        <div class="producto-med">                            
+                            <div class="container-talle">                                
+                                <div class="talles">40</div>
+                                <div class="talles">41</div>
+                                <div class="talles">42</div>
+                                <div class="talles">43</div>
+                            </div>
+                        </div>
+                        <div class="producto-bot"> 
+                            <div>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="productos/Adidas Response Solar.webp" alt="Adidas">
+                    <div class="producto-info">
+                        <div class="producto-top">
+                            <h3>Resp Solar</h3>
+                            <P>$53.999</P>
+                        </div>
+                        <div class="producto-med">                            
+                            <div class="container-talle">
+                                <div class="talles">38</div>
+                                <div class="talles">39</div>
+                                <div class="talles">40</div>
+                                <div class="talles">41</div>                                
+                            </div>
+                        </div>
+                        <div class="producto-bot"> 
+                            <div>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="productos/Adidas Solar Glide.webp" alt="Adidas">
+                    <div class="producto-info">
+                        <div class="producto-top">
+                            <h3>Solar Glide</h3>
+                            <P>$45.000</P>
+                        </div>
+                        <div class="producto-med">
+                            <div class="container-talle">                                
+                                <div class="talles">37</div>
+                                <div class="talles">38</div>
+                                <div class="talles">39</div>
+                                <div class="talles">40</div>
+                            </div>
+                        </div>
+                        <div class="producto-bot"> 
+                            <div>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="productos/Adidas Supernova.webp" alt="Adidas">
+                    <div class="producto-info">
+                        <div class="producto-top">
+                            <h3>Supernova</h3>
+                            <P>$51.990</P>
+                        </div>
+                        <div class="producto-med"> 
+                            <div class="container-talle">                                
+                                <div class="talles">39</div>
+                                <div class="talles">40</div>
+                                <div class="talles">41</div>
+                                <div class="talles">42</div>
+                            </div>
+                        </div>
+                        <div class="producto-bot"> 
+                            <div>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="productos/Puma Aviator.webp" alt="Puma">
+                    <div class="producto-info">
+                        <div class="producto-top">
+                            <h3>Aviator</h3>
+                            <P>$45.999</P>
+                        </div>
+                        <div class="producto-med">                            
+                            <div class="container-talle">                                
+                                <div class="talles">39</div>
+                                <div class="talles">40</div>
+                                <div class="talles">41</div>
+                                <div class="talles">42</div>
+                            </div>
+                        </div>
+                        <div class="producto-bot"> 
+                            <div>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="productos/Puma Electrify.webp" alt="Puma">
+                    <div class="producto-info">
+                        <div class="producto-top">
+                            <h3>Electrify</h3>
+                            <P>$50.000</P>
+                        </div>
+                        <div class="producto-med">                            
+                            <div class="container-talle">                                
+                                <div class="talles">38</div>
+                                <div class="talles">39</div>
+                                <div class="talles">40</div>
+                                <div class="talles">41</div>
+                            </div>
+                        </div>
+                        <div class="producto-bot"> 
+                            <div>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="productos/Under Charged Rouge 2.5.webp" alt="Under">
+                    <div class="producto-info">
+                        <div class="producto-top">
+                            <h3>Rouge 2.5</h3>
+                            <P>$53.000</P>
+                        </div>
+                        <div class="producto-med">                            
+                            <div class="container-talle">                                
+                                <div class="talles">39</div>
+                                <div class="talles">40</div>
+                                <div class="talles">41</div>
+                                <div class="talles">42</div>
+                            </div>
+                        </div>
+                        <div class="producto-bot"> 
+                            <div>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="productos/Under Charged.webp" alt="Under">
+                    <div class="producto-info">
+                        <div class="producto-top">
+                            <h3>Charged</h3>
+                            <P>$48.000</P>
+                        </div>
+                        <div class="producto-med">                            
+                            <div class="container-talle">                                
+                                <div class="talles">39</div>
+                                <div class="talles">40</div>
+                                <div class="talles">41</div>
+                                <div class="talles">42</div>
+                            </div>
+                        </div>
+                        <div class="producto-bot"> 
+                            <div>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="contacto">
+            <div class="container-contacto-all">
+                <div class="container-body">
+                    <div class="colum1">                        
+                        <h2>Encontranos</h2>
+                        <i class="fas fa-location-dot"></i>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13618.972559372663!2d-64.1948723!3d-31.4212023!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x696a6c225bd9dd84!2sCarlos%20G%20Cmet!5e0!3m2!1ses!2sar!4v1668643535344!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
+                    </div>
+                    <div class="colum2">
+                        <h2>Redes Sociales</h2>
+                        <div class="row">
+                            <img src="icon/facebook.png" alt="face">
+                            <label>Seguinos en Facebook</label>
+                        </div>
+                        <div class="row">
+                            <img src="icon/twitter.png" alt="Tw">
+                            <label>Seguinos en Twitter</label>
+                        </div>
+                        <div class="row">
+                            <img src="icon/Instagram.png" alt="ig">
+                            <label>Seguinos en Instagram</label>
+                        </div>                                
+                    </div>
+                    <div class="colum3">
+                        <h2>Información de Contacto</h2>
+                        <div class="row2">
+                            <img src="icon/casa.png" alt="casa">
+                            <label> Arturo M Bas 613.  Córdoba - Capital.</label>
+                        </div>
+        
+                        <div class="row2">
+                            <img src="icon/telefono.png" alt="tel">
+                            <label> +54-351-6967893</label>
+                        </div>
+        
+                        <div class="row2">
+                            <img src="icon/sobre.png" alt="sobre">
+                            <label> TheWinner@gmail.com</label>
+                        </div>
+                    </div>
+                </div>         
+            </div>
+            
+        </section>       
+    </main>
+    <footer> 
+
+    <div class="container-footer">
+    <div class="footer">
+        <div class="copyright">
+        © TheWinner 2022. Todos los derechos reservados.
+        </div>
+        <div class="information">
+        <a href="">Información de compañía</a> |
+        <a href="">Privación y Política</a> |
+        <a href="">Términos y Condiciones</a>        
+        </div>
+    </div>
+    </div>                
+
+    
+    
+        
+    </footer>
+</body>
+</html>

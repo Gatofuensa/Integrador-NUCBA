@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regístrate</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="animaciones.css">
+</head>
+<body>
+    <main class="main">
+        <section class="container">
+            <div class="container__title">
+                <a href="index.html" >
+                    <img src="img/logo.png" alt="Logo TheWinner" class="logo">
+                </a>
+                <h1>Regístrate</h1>
+            </div>
+            <form class="container__form">
+                <div class="container__form__user">
+                    <i class="fa-solid fa-user"::before></i>
+                    <input type="text" name="username" id="username" placeholder="Username" required>                 
+                </div>
+                <div class="container__form__user">
+                    <i class="fa-solid fa-envelope"::before></i>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>                 
+                </div>
+                <div class="container__form__pass">
+                    <div class="container__form__password">
+                        <i class="fa-solid fa-lock"::before></i>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                    </div>                                     
+                </div>
+                <div class="container__form__pass">
+                    <div class="container__form__password">
+                        <i class="fa-solid fa-lock"::before></i>
+                        <input type="password" name="password" id="password" placeholder="Repeat Password" required>
+                    </div>                                     
+                </div>
+                <div class="terminos">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto términos y condiciones.</label>
+                </div>
+                <input type="submit" value="Login" class="login">
+            </form>
+            <p>¿Ya sos miembro?
+                <a href="login.html">Iniciar Sesión</a>
+            </p>
+        </section>
+    </main>    
+</body>
+</html>

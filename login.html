@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mediaqueries.css">   
+    <link rel="stylesheet" href="animaciones.css">
+</head>
+<body>
+    <main class="main">
+        <section class="container">
+            <div class="container__title">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo TheWinner" class="navbar__logo">
+                </a>
+                <h1>Login</h1>
+            </div>
+            <form class="container__form">
+                <div class="container__form__user">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                </div>
+                <div class="container__form__pass">
+                    <div class="container__form__password">
+                        <i class="fa-solid fa-lock"::before></i>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+
+                    </div>
+                    <a href="#" class="olvidaste-password">¿Olvidaste tu contraseña?</a>                    
+                </div>
+                <input type="submit" value="Login" class="login">
+            </form>
+            <div class="container__login-with">
+                Iniciar sesión con:
+                <div class="cards">
+                    <a href="#" class="facebook">
+                        <i class="fa-brands fa-facebook"::before></i>
+                        Facebook
+                    </a>
+                    <a href="#" class="google">
+                        <img src="https://colorlib.com/etc/lf/Login_v5/images/icons/icon-google.png" alt>
+                        Google
+                    </a>                    
+                </div>
+                <div>
+                    <p> ¿No eres miembro?
+                        <a href="registrarme.html">Regístrate</a>
+                    </p>
+                </div>
+            </div>
+        </section>       
+
+    </main>          
+            
+</body>
+</html>
